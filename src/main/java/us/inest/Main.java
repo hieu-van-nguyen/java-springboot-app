@@ -2,9 +2,10 @@ package us.inest;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.cache.annotation.EnableCaching;
 
-@SpringBootApplication // Marks this as a Spring Boot app
+@SpringBootApplication
+@EnableCaching
 public class Main {
     public static void main(String[] args) {
         SpringApplication.run(Main.class, args);
