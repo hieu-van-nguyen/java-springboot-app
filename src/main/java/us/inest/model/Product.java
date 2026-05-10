@@ -1,7 +1,11 @@
 package us.inest.model;
 
 import java.io.Serializable;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Table;
 
+@Entity
+@Table
 public class Product implements Serializable {
     private Long id;
     private String name;
